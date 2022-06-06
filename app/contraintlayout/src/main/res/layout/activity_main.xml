@@ -1,34 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.Codelabs.AppBarOverlay">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/purple_200"
+        android:src="@drawable/pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Codelabs.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:text="@string/singapore"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </android.support.v7.widget.AppCompatTextView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:paddingStart="15dp"
+        android:text="@string/camera"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+    </android.support.v7.widget.AppCompatTextView>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/cameratext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/enter_the_camera_type"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingstext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintStart_toEndOf="@+id/camera"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:layout_editor_absoluteX="73dp"
+        app:layout_editor_absoluteY="176dp">
+
+    </android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:paddingStart="15dp"
+        android:text="@string/settings"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera">
+
+    </android.support.v7.widget.AppCompatTextView>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/settingstext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/enter_the_camera_settings"
+        android:lineSpacingExtra="8sp"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#78909C"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/longsettingstext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintStart_toEndOf="@+id/settings"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/cameratext"
+        app:layout_editor_absoluteX="73dp"
+        app:layout_editor_absoluteY="176dp"></android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/longsettingstext"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="start"
+        android:paddingStart="15dp"
+        android:text="@string/text"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button1"
+        style="@style/CardView.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/upload"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/longsettingstext" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/discard"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@id/longsettingstext"></android.support.v7.widget.AppCompatButton>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="barrier2,cameratext,settingstext"
+        tools:layout_editor_absoluteX="411dp" />
+</android.support.constraint.ConstraintLayout>

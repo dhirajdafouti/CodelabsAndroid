@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codelabs">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:label="@string/title_activity_second"
+            android:theme="@style/Theme.Codelabs.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
