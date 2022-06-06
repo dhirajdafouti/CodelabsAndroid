@@ -185,4 +185,11 @@
         app:barrierDirection="left"
         app:constraint_referenced_ids="barrier2,cameratext,settingstext"
         tools:layout_editor_absoluteX="411dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 </android.support.constraint.ConstraintLayout>
