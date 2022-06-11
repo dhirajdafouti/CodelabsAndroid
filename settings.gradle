@@ -16,3 +16,7 @@ rootProject.name = "codelabs"
 include ':app'
 include ':app:contraintlayout'
 include ':app:workmanger'
+include ':app:notification'
+include ':app:splash'
+include ':app:onboarding'
+include ':app:settting'
