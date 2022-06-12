@@ -18,4 +18,10 @@
     <string name="text">A constraint is a connection or alignment between two UI elements. Each constraint connects or aligns one view to another view, to the parent layout, or to an invisible guideline. In a ConstraintLayout, you position a view by defining at least one horizontal and one vertical constraint.</string>
     <string name="upload">upload</string>
     <string name="discard">DISCARD</string>
+    <string name="track_order">Track Order</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="order_number">Order Number</string>
+    <string name="estimated_time">Estimated Time</string>
+    <string name="_30_minutes">30 Minutes</string>
+    <string name="order_id">#DREERFD</string>
 </resources>

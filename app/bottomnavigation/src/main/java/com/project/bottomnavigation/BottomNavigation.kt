@@ -15,8 +15,9 @@ class BottomNavigation : AppCompatActivity() {
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.navigation_bottom)
         val navController = findNavController(R.id.fragmentContainerView2)
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.firstFragment,R.id.secondFragment,R.id.thirdFragment))
-        setupActionBarWithNavController(navController,appBarConfiguration)
+        //Navigation designation route for the application theme bar
+     //   val appBarConfiguration = AppBarConfiguration(setOf(R.id.firstFragment,R.id.secondFragment,R.id.thirdFragment))
+     //   setupActionBarWithNavController(navController,appBarConfiguration)
         bottomNavigation.setupWithNavController(navController)
 
 
