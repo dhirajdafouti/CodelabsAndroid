@@ -39,7 +39,9 @@
             android:textAlignment="viewStart"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="normal"></androidx.appcompat.widget.AppCompatTextView>
+            android:textStyle="normal">
+
+        </androidx.appcompat.widget.AppCompatTextView>
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -65,6 +67,7 @@
         app:layout_constraintTop_toBottomOf="@id/header_screen"></View>
 
     <View
+        android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@color/grey"
@@ -113,7 +116,7 @@
         android:gravity="center"
         android:text="@string/order_id"
         android:textColor="@color/black"
-        android:textSize="17sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/estimate"
         app:layout_constraintStart_toStartOf="@id/estimate"
@@ -128,7 +131,7 @@
         android:gravity="center"
         android:text="@string/_30_minutes"
         android:textColor="@color/black"
-        android:textSize="17sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/order"
         app:layout_constraintStart_toStartOf="@id/order"
@@ -140,35 +143,91 @@
         android:id="@+id/divider"
         android:layout_width="wrap_content"
         android:layout_height="3dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/timetext"
         tools:ignore="MissingConstraints"></View>
 
     <View
-        android:id="@+id/viewprogress_remaining"
-        android:layout_width="18dp"
-        android:background="@drawable/view_status_remaining"
-        app:layout_constraintBottom_toBottomOf="@id/image_status_remeaining"
-        app:layout_constraintTop_toTopOf="@id/image_status_remeaining"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="18dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:id="@+id/viewprogress"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="30dp"
-        tools:ignore="MissingConstraints">
+        android:layout_marginTop="15dp"
+        android:background="@drawable/view_status_completed"
+        app:layout_constraintBottom_toBottomOf="@id/image_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintTop_toTopOf="@id/image_progress"
+        tools:ignore="MissingConstraints"></View>
+
+    <ImageView
+        android:id="@+id/image_progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/order_placed"
+        app:layout_constraintStart_toEndOf="@id/viewprogress"
+        app:layout_constraintTop_toBottomOf="@id/divider"></ImageView>
+
+    <View
+        android:id="@+id/viewstarted"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imagestarted"
+        app:layout_constraintTop_toTopOf="@id/imagestarted"
+        android:background="@drawable/view_status_completed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewstarted">
+
     </View>
 
     <ImageView
-        android:id="@+id/image_status_remeaining"
-        android:contentDescription="@string/app_name"
-        android:layout_width="70dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@id/divider"
-        android:src="@drawable/order_placed"
-        app:layout_constraintStart_toEndOf="@id/viewprogress_remaining"
-        android:layout_height="70dp"
-        ></ImageView>
+        android:id="@+id/imagestarted"
+        android:src="@drawable/ic_baseline_credit_score_24"
+        android:layout_width="100dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/image_progress"
+        app:layout_constraintStart_toEndOf="@id/viewstarted"
+        android:layout_height="100dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="40dp"
+        android:text="@string/order_placed"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_progress"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:textStyle="normal"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/we_have_received_your_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_progress"
+        tools:layout_editor_absoluteY="214dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
