@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codelabs">
         <activity
+            android:name=".AppBarLayout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
             android:name=".BottomNavigation"
             android:exported="true">
             <intent-filter>

@@ -6,4 +6,5 @@
     <string name="settings">Settings</string>
     <string name="cart">Cart</string>
     <string name="home">Home</string>
+    <style name="more">More</style>
 </resources>

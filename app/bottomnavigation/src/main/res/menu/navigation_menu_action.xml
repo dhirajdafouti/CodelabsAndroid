@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_24"
+        android:title="@string/home"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/shopping"
+        android:title="@string/cart"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:title="@string/more"
+        app:showAsAction="never" />
+</menu>

@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout-land/activity_bottom_navigation.xml" value="0.15608465608465608" />
+        <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout/activity_app_bar_layout.xml" value="0.1" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout/activity_bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout/fragment_first.xml" value="0.184375" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout/fragment_second.xml" value="0.184375" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/layout/fragment_third.xml" value="0.184375" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/menu/navigation_menu.xml" value="0.1" />
+        <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/bottomnavigation/src/main/res/menu/navigation_menu_action.xml" value="0.1265625" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/drawable/arrow.xml" value="0.145" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/drawable/ic_baseline_directions_bike_24.xml" value="0.1" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/drawable/ic_baseline_done_all_24.xml" value="0.151" />
@@ -21,7 +23,7 @@
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/drawable/view_status_remaining.xml" value="0.148" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/layout-v26/activity_second.xml" value="0.184375" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/layout/activity_second.xml" value="0.1" />
+        <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/contraintlayout/src/main/res/layout/activity_second.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/dhira/OneDrive/Desktop/Kotlin/codelabs/app/settting/src/main/res/xml/root_preferences.xml" value="0.1" />
       </map>
     </option>
