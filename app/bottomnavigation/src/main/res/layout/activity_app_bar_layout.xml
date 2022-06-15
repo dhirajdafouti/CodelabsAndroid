@@ -22,11 +22,10 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            style="@style/Widget.Material3.Light.ActionBar.Solid"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/teal_200"
-            android:theme="?attr/actionBarTheme"
+            android:theme="@style/Widget.Material3.Light.ActionBar.Solid"
             app:menu="@menu/navigation_menu_action"
             app:navigationIcon="@android:drawable/arrow_down_float"
             app:title="@string/home">

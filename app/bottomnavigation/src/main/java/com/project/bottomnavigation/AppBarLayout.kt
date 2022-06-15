@@ -12,6 +12,7 @@ class AppBarLayout : AppCompatActivity() {
         setContentView(R.layout.activity_app_bar_layout)
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(false)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
